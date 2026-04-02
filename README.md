@@ -1,8 +1,13 @@
 # ISBN-10 Checker
 
-A simple ISBN-10 validator I wrote for my Maths & CS class assignment.
+A simple ISBN-10 validator I wrote for my Maths & CS class assignmen.
 
-Right now it only has the core calculation logic — no API or valiidations just the functions that do the actual maths. The plan is to eventually wrap it in an API but for now I wanted to get the logic right first.
+```
+sct-254-167/2023
+Boby Barack
+```
+
+Right now it only has the core calculation logic — no API or valiidations just the functions that do the actual maths. The plan is to eventually wrap it in an API but for now I wanted to express the logic i understand first.
 
 ## How ISBN-10 validation actually works
 
@@ -18,7 +23,7 @@ So for example `0618260307`:
 
 187 ÷ 11 = 17 with no remainder, so its valid.
 
-One edge case is that the last digit can be `X` which just means 10. So if you see something like `020161622X` you treat that X as the value 10 and multiply it by position 10 giving you 100.
+ A special case I've come across is that the last digit can be `X` which just means 10. So if you see something like `020161622X` you treat that X as the value 10 and multiply it by position 10 giving you 100.
 
 ## What the code does
 
@@ -36,10 +41,10 @@ python isbn_checker.py
 It will validate the test ISBNs from the assignment and print the results.
 
 ## Credits
-Thanks to Mr.Nyaga for helping e understand the meaning of linear engineering in that i think about the actual mathematical logic first before attempting to validate the issue and eventually expose it to the internet
+Thanks to Mr.Nyaga for helping me understand the meaning of linear engineering in that i think about the actual mathematical logic first before attempting to validate the issue and eventually expose it to the internet through the API
 
 ## What I yet to do
 
-- add input cleaning (handle dashes and spaces)
-- add input validation (check length, reject bad characters)
-- wrap in Flask API with proper endpoints
+- add input cleaning (handle dashes and spaces) using -- 
+- add input validation (check length of input and reject bad characters)
+- wrap in Flask API(Internet exposure) with proper endpoints.
