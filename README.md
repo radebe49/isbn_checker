@@ -3,8 +3,8 @@
 A simple ISBN validator I wrote for my Maths & CS class assignment. 
 
 ```
-student-id: sct-254-167/2023
-name: Boby Barack
+ sct-254-167/2023
+ Boby Barack
 ```
 
 Right now it has the core calculation logic for both ISBN-10 and ISBN-13 — no API or visualizations yet, just the functions that do the actual maths. The plan is to eventually wrap it in an API, but for now I wanted to express the logic I understand first.
