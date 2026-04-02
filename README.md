@@ -59,7 +59,7 @@ python isbn_checker.py
 It will execute the test ISBNs from the assignment and print the results to the console.
 
 ## Credits
-Thanks to Mr. Nyaga for helping me understand the meaning of linear engineering — thinking about the actual mathematical logic first before attempting to validate the issue and eventually expose it to the internet through the API.
+Thanks to Mr. Nyaga for helping me understand the meaning of linear engineering by thinking about the actual mathematical logic first before attempting to validate the input used for testing or running the program(if input functions are added) and eventually expose it to the internet through the API.
 
 ## What I yet to do
 
