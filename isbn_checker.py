@@ -35,11 +35,12 @@ def validate_isbn10(isbn):
 
 
 def convert_to_isbn13(isbn):
-    # prefix 978 + first 9 digits, then compute isbn13 check digit. 
+    # prefix 978 + first 9 digits, then compute isbn13 check digit. we are using 978 to convert from normal isbn10 to global standard isbn13(the standard used in barcodes)
     body = "978" + isbn[:9]
 
     total = 0
     for i in range(12):
+        #if its even the weight is 1 so we leave as it is but if its odd the weight is 3, hence we multiply by three...im using the total=total+int(isbn[i]) * 3
         if i % 2 == 0:
             total = total + int(body[i])
         else:
@@ -64,7 +65,7 @@ def validate_isbn13(isbn):
         return "Invalid"
 
 
-# --- testing ---(Disclaimer. For This part of the code is the ONLY section i involved AI. I didn't exactly know how to run the tests from my .py fiile 
+# --- testing ---(Disclaimer. For This part of the code is the ONLY section i involved AI. I didn't exactly know how to run the tests from my .py file.
 if __name__ == "__main__":
     print("--- ISBN-10 Validation ---")
     test_isbns = ["0618260307", "0451524934", "0262033844", "0131103628",
